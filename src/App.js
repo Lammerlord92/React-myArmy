@@ -12,10 +12,10 @@ const Header =() => {
         <Link to='/'><Icon>home</Icon></Link>
       </NavItem>
       <NavItem>
-        <Link to='/signup'><Icon>group_add</Icon></Link>
+        <Link to='/signup'><Icon>person_add</Icon></Link>
       </NavItem>
       <NavItem>  
-        <Link to='/login'><Icon>group</Icon></Link>
+        <Link to='/login'><Icon>person</Icon></Link>
       </NavItem>
       
         <SideNav
