@@ -20,8 +20,7 @@ const Header =() => {
       
       <SideNav
         trigger={<NavItem><Link to='#'><Icon>menu</Icon></Link></NavItem>}
-        options={{ closeOnClick: true }}
-        >
+        options={{ closeOnClick: true, edge: 'right', }}>
         <SideNavItem userView
           user={{
             background: 'img/react-materialize-logo.svg',
