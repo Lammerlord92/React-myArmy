@@ -20,20 +20,20 @@ const Header =() => {
       
       <SideNav
         trigger={<NavItem><Link to='#'><Icon>menu</Icon></Link></NavItem>}
-        options={{ closeOnClick: true, edge: 'right', }}>
+        options={{ closeOnClick: true }}>
         <SideNavItem userView
           user={{
-            background: 'img/react-materialize-logo.svg',
-            image: 'img/react-materialize-logo.svg',
+            background: 'img/6809725-simple-vintage-backgrounds.jpg',
+            image: 'img/modern-technological-elements-with-transparent-background_1035-7108.jpg',
             name: 'John Doe',
             email: 'jdandturk@gmail.com'
           }}
         />
-        <SideNavItem icon="home"> <Link to='/'>First Link With Icon</Link></SideNavItem>
-        <SideNavItem href='#!second'>Second Link</SideNavItem>
+        <Link to='/signup'><SideNavItem waves icon="home">First Link With Icon</SideNavItem></Link>
+        <SideNavItem waves >Second Link</SideNavItem>
         <SideNavItem divider />
         <SideNavItem subheader>Subheader</SideNavItem>
-        <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
+        <SideNavItem waves>Third Link With Waves</SideNavItem>
       </SideNav>
       
     </Navbar>
@@ -46,10 +46,11 @@ const App =() => {
     <Router>
       <div>
         <Header/>
-
+        <div className="container">
         <Route exact path="/" component={Home}/>
         <Route path="/signup" component={Signup}/>
         <Route path="/login" component={Login}/>
+        </div>
       </div>
     </Router>
   );
