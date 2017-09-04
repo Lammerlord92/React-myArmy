@@ -18,24 +18,24 @@ const Header =() => {
         <Link to='/login'><Icon>person</Icon></Link>
       </NavItem>
       
-        <SideNav
-            trigger={<NavItem><Link to='#'><Icon>menu</Icon></Link></NavItem>}
-            options={{ closeOnClick: true }}
-            >
-            <SideNavItem userView
-              user={{
-                background: 'img/office.jpg',
-                image: 'img/yuna.jpg',
-                name: 'John Doe',
-                email: 'jdandturk@gmail.com'
-              }}
-            />
-            <SideNavItem href='#!icon' icon='cloud'>First Link With Icon</SideNavItem>
-            <SideNavItem href='#!second'>Second Link</SideNavItem>
-            <SideNavItem divider />
-            <SideNavItem subheader>Subheader</SideNavItem>
-            <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
-          </SideNav>
+      <SideNav
+        trigger={<NavItem><Link to='#'><Icon>menu</Icon></Link></NavItem>}
+        options={{ closeOnClick: true }}
+        >
+        <SideNavItem userView
+          user={{
+            background: 'img/react-materialize-logo.svg',
+            image: 'img/react-materialize-logo.svg',
+            name: 'John Doe',
+            email: 'jdandturk@gmail.com'
+          }}
+        />
+        <SideNavItem icon="home"> <Link to='/'>First Link With Icon</Link></SideNavItem>
+        <SideNavItem href='#!second'>Second Link</SideNavItem>
+        <SideNavItem divider />
+        <SideNavItem subheader>Subheader</SideNavItem>
+        <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
+      </SideNav>
       
     </Navbar>
   );
